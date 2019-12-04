@@ -2,23 +2,37 @@
 
 사용언어(JS)
 
-## Step1
+## Step2
 
-timePrint() :  시간딜레이로 Html에 출력하는 함수입니다. 
+menuSelect(): 메뉴선택 함수
 
-play(): player가 참여하는 함수로 야구카운트와 안타카운트를 실행합니다.
+handleSubmit(): enter키로 이행하는 이벤트함수
 
-ballCounter(): 스트라이크, 볼, 안타, 아웃을 랜덤으로 생성, 기록하고 swingResult()를 호출합니다.  생성자속성 중 rs는 swingResult()값을 hit 는 count.hit로 안타갯수를 리턴합니다.
+makeTeam(): createElement(input)을 이용하여 팀이름과 팀원 이름, 팀원타율을 적기위한 함수.
 
-swingResult(): ballcounter에서 받은 호출값을 switch문으로 문자열을 res값에 추가하고,
+그러나 결국 입력하는 방법을 시간안에 찾지못하고 미완성..
 
-printCount()에서 사용하는 count를 리턴합니다.
+teamSubmit(): 입력받은 것을 세션스토리지로 저장하는 함수. 이것도 미완성.
 
-printCount(): swingResult에서 받은 count값을 출력을 리턴합니다.
+removePrint(): text 정리하는함수.
 
-gameOver(): ballCounter의 hit값의 출력을 리턴합니다.
+load_team(): 세션스토리지에서 가져오는 함수. 이것도 미완성.
 
-init(): 작동함수입니다.
+ballCounter(hitter): 
+
+```txt
+-안타: h, 0.1 < h < 0.5
+-스트라이크: (1 - h) / 2 - 0.05
+-볼: (1 - h) / 2 - 0.05
+-아웃: 0.1
+```
+
+적용 완료.
 
 
 
+
+
+
+
+PS. 시간을 전부 썼음에도 완성시키지못하게 많이 아쉽습니다.  부족하지만 지금까지 작성한 코드를 읽어주셔서 감사합니다.
